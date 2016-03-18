@@ -1,13 +1,17 @@
-listita=[]
-lista = raw_input("Ingresa frase: ")
-while (lista!=" "  ):
-    listita += [lista] 
-    lista = raw_input("Ingresa frase: ")
+def funcionmayus():
+
+    print ("las frases ingresadas fueron: ")
+    print listamin
+    nueva_lista=' '.join(listamin)
+    print nueva_lista.upper()
+
+if __name__== "__main__":
     
-print ("las frases ingresadas fueron: ")
-print listita
-nueva_lista=' '.join(listita)
-print nueva_lista.upper()
-
-
+    lista = raw_input("Ingresa frase: ")
+    listamin=[]
+    while (lista!=" "):
+        listamin += [lista] 
+        lista = raw_input("Ingresa frase: ")
+    funcionmayus()
+    
 
