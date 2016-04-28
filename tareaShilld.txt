@@ -1,0 +1,12 @@
+chmod 777 "$NuevaCarpeta"  		         Todos los permisos a la carpeta
+    cp -r "$CarpetaActual/*" "$NuevaCarpeta"     copiamos lo de la carpeta a la nueva
+    cd "$NuevaCarpeta"                           vamos a la carpeta
+    f=`date +%Y-%m-%d`					año-mes.dia
+    full_path=$NuevaCarpeta				
+    archivo="${full_path##*/}"
+    rar -a "$f"_"archivo.rar" "$CarpeaActual"  Creamos el archivo rar
+    echo "Listo ! :D ."
+
+%Y Año con 4 digitos
+%m mes
+%d dias
